@@ -2,7 +2,7 @@ import React from 'react';
 import './Button'
 import './HeroSection.css'
 import {Button} from "./Button";
-import videoDigit from './Assets/video.mp4'
+
 import {useHistory} from "react-router-dom";
 import chess from './Assets/chess_1.jpg'
 
@@ -26,7 +26,7 @@ function HeroSection(){
                 data-testid='test'
                 onClick={()=>handleOnClick()}
             >
-                Get Started
+                Get Started Right Now
             </Button>
         </div>
     )
