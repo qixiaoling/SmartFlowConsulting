@@ -1,0 +1,119 @@
+
+body {
+    font-family: 'Michroma', sans-serif;
+    color: #fff;
+    letter-spacing: 3px;
+    position: relative;
+    font-size: 1rem;
+}
+
+.about-me-container {
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 10vh;
+    overflow: hidden;
+    background: rgb(2, 0, 36);
+    background:
+            linear-gradient(90deg,
+            rgba(2, 0, 36, 1) 0%,
+            rgba(43, 114, 124, 1) 76%,
+            rgba(0, 212, 255, 1) 100%);
+    display: flex;
+    justify-content: center;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-left {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-left img {
+    width: 55%;
+    min-width: 55%;
+    height: 450px;
+    object-fit: cover;
+    margin-bottom: 3em;
+    border-radius: 5px;
+}
+
+.container-right {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5em;
+}
+
+h2, p {
+    margin-bottom: 1.5em;
+}
+
+.high-light-button {
+    font-family: 'Michroma', sans-serif;
+    background-color: transparent;
+    border-color: transparent;
+    text-transform: capitalize;
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+    margin: 0.5em 0.5em 1.5em 0.5em;
+    cursor: pointer;
+    padding: 0.5em 0.5em;
+    line-height: 1;
+    color: rgba(0, 212, 255, 1);
+    box-shadow: 0 0 10px #53E0D3,
+    0 0 20px #53E0D3,
+    0 0 40px #53E0D3,
+    0 0 80px #53E0D3,
+    0 0 160px #53E0D3;
+    border-radius: 5px;
+}
+
+.high-light-list {
+    transform: translateX(-200%);
+    transition: transform 0.3s ease-in;
+}
+
+.active {
+    transform: translateX(0%);
+}
+
+@media screen and (max-width: 768px) {
+
+    .about-me-container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .container-left,
+    .container-right {
+        width: 100%;
+    }
+    .container-right {
+        margin: 0 2em;
+    }
+    .container-left {
+        margin-bottom: 2em;
+    }
+
+
+
+
+
+}
+
+
+
