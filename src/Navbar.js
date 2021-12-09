@@ -24,14 +24,16 @@ function Navbar() {
                 <p>Let us give you a consult today, call (123)456-7890</p>
             </div>
             <div className='navbar-main'>
-                <LinkR to='/' className='company-logo'>
-                    <img src={logo} alt=""/>
-                </LinkR>
-                <div className='hamburger-menu' onClick={() =>
-                    toggleLinks(!links)}>
-                    <i className='fas fa-bars'/>
-                </div
-                >
+                <div className='navbar-header'>
+                    <LinkR to='/' className='company-logo'>
+                        <img src={logo} alt=""/>
+                    </LinkR>
+                    <div className='hamburger-menu' onClick={() =>
+                        toggleLinks(!links)}>
+                        <i className='fas fa-bars'/>
+                    </div>
+                </div>
+
                 <ul className={changeClasses()}>
                         <li className='link'>
                             <LinkS to='/' onClick={closeMobileMenu} className='router-menu' >Home</LinkS>
@@ -48,7 +50,7 @@ function Navbar() {
                         <li className='link'>
                             <LinkS to='clients' onClick={closeMobileMenu} className='router-menu'>Clients</LinkS>
                         </li>
-                        <li lassName='link'>
+                        <li className='link'>
                             <LinkR to='/contact' onClick={closeMobileMenu} className='router-menu'>Contact</LinkR>
                         </li>
                 </ul>
