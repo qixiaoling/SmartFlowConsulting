@@ -8,11 +8,7 @@ import Expertise from "./Component/Expertise/Expertise";
 function Home(){
     return(
         <>
-            <HeroSection />
-            <Expertise/>
-            {/*<AboutMe/>*/}
-            <Clients />
-            <Footer />
+
         </>
     )
 }

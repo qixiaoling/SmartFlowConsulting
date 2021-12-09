@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {Link as LinkR, Link as LinkS} from 'react-router-dom';
 import './Navbar.css'
-import logo from './Assets/logo_orange.png'
+import logo from './Assets/logo_orange_2.png'
 
 function Navbar() {
 
@@ -33,30 +33,24 @@ function Navbar() {
                 </div
                 >
                 <ul className={changeClasses()}>
-                    <div className='sidebar-close-logo' onClick={() => toggleLinks(!links)}>
-                        <i className="fas fa-times"></i>
-                    </div>
-                    <ul className='links-wrapper'>
                         <li className='link'>
                             <LinkS to='/' onClick={closeMobileMenu} className='router-menu' >Home</LinkS>
                         </li>
-                        <li className='router-menu'>
+                        <li className='link'>
                             <LinkS to='expertise' onClick={closeMobileMenu} className='router-menu'>Expertise</LinkS>
                         </li>
-                        <li className='router-menu'>
+                        <li className='link'>
                             <LinkS to='about-me' onClick={closeMobileMenu} className='router-menu'>About</LinkS>
                         </li>
-                        <li className='router-menu'>
+                        <li className='link'>
                             <LinkS to='review' onClick={closeMobileMenu} className='router-menu'>Review</LinkS>
                         </li>
-                        <li className='router-menu'>
+                        <li className='link'>
                             <LinkS to='clients' onClick={closeMobileMenu} className='router-menu'>Clients</LinkS>
                         </li>
-                        <li lassName='router-menu'>
+                        <li lassName='link'>
                             <LinkR to='/contact' onClick={closeMobileMenu} className='router-menu'>Contact</LinkR>
                         </li>
-                    </ul>
-
                 </ul>
 
             </div>
