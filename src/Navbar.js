@@ -1,48 +1,66 @@
 import React, {useState} from 'react';
-import {Link} from 'react-router-dom';
+import {Link as LinkR, Link as LinkS} from 'react-router-dom';
 import './Navbar.css'
 import logo from './Assets/logo_orange.png'
 
 function Navbar() {
 
-    const [titleOpen, toggleTitleOpen] = useState(false);
+    const [links, toggleLinks] = useState(false);
 
     function changeClasses() {
-        let classes = "titles";
-        if (titleOpen) {
+        let classes = "navLinks";
+        if (links) {
             classes += ' active'
         }
         return classes;
     }
     function closeMobileMenu(){
-        toggleTitleOpen(false);
+        toggleLinks(false);
     }
 
     return (
-        <nav className='navbar'>
-            <Link to='/' className='company-logo'>
-               <img src={logo} alt=""/>
-            </Link>
-            <ul className={changeClasses()}>
-                <li className='title-item'>
-                    <Link to='/' onClick={closeMobileMenu}>Home</Link>
-                </li>
-                <li className='title-item'>
-                    <Link to='/about-me' onClick={closeMobileMenu}>About</Link>
-                </li>
-                <li className='title-item'>
-                    <Link to='/project' onClick={closeMobileMenu}>Project</Link>
-                </li>
-                <li className='title-item'>
-                    <Link to='/review' onClick={closeMobileMenu}>Review</Link>
-                </li>
-                <li lassName='title-item'>
-                    <Link to='/contact' onClick={closeMobileMenu}>Contact</Link>
-                </li>
-            </ul>
-            <div className='hamburger-menu' onClick={() => toggleTitleOpen(!titleOpen)}>
-                <i className='fas fa-bars'/>
+        <nav className='navbar-container'>
+            <div className='navbar-narrow'>
+                <p>Let us give you a consult today, call (123)456-7890</p>
             </div>
+            <div className='navbar-main'>
+                <LinkR to='/' className='company-logo'>
+                    <img src={logo} alt=""/>
+                </LinkR>
+                <div className='hamburger-menu' onClick={() =>
+                    toggleLinks(!links)}>
+                    <i className='fas fa-bars'/>
+                </div
+                >
+                <ul className={changeClasses()}>
+                    <div className='sidebar-close-logo' onClick={() => toggleLinks(!links)}>
+                        <i className="fas fa-times"></i>
+                    </div>
+                    <ul className='links-wrapper'>
+                        <li className='link'>
+                            <LinkS to='/' onClick={closeMobileMenu} className='router-menu' >Home</LinkS>
+                        </li>
+                        <li className='router-menu'>
+                            <LinkS to='expertise' onClick={closeMobileMenu} className='router-menu'>Expertise</LinkS>
+                        </li>
+                        <li className='router-menu'>
+                            <LinkS to='about-me' onClick={closeMobileMenu} className='router-menu'>About</LinkS>
+                        </li>
+                        <li className='router-menu'>
+                            <LinkS to='review' onClick={closeMobileMenu} className='router-menu'>Review</LinkS>
+                        </li>
+                        <li className='router-menu'>
+                            <LinkS to='clients' onClick={closeMobileMenu} className='router-menu'>Clients</LinkS>
+                        </li>
+                        <li lassName='router-menu'>
+                            <LinkR to='/contact' onClick={closeMobileMenu} className='router-menu'>Contact</LinkR>
+                        </li>
+                    </ul>
+
+                </ul>
+
+            </div>
+
         </nav>
     )
 }
