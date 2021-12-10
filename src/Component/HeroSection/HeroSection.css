@@ -2,7 +2,7 @@
     width: 100vw;
     height: 50vh;
     margin: 0 auto;
-    background: url('./Assets/chess_1.jpg');
+    background: url('../../Assets/chess_1.jpg');
     background-size: cover;
     background-position: center;
     position: relative;

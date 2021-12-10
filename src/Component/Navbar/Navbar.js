@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {Link as LinkR, Link as LinkS} from 'react-router-dom';
 import './Navbar.css'
-import logo from './Assets/logo-lunapic.png'
+import logo from '../../Assets/logo-lunapic.png'
 
 function Navbar() {
 
