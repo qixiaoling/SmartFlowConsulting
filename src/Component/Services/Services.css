@@ -1,0 +1,14 @@
+.services-container {
+    width: 100vw;
+    height: auto;
+    margin: 0 auto;
+    background-color: var(--clr-light-background);
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+.service-item {
+    width: 80%;
+    height: 35rem;
+    border: 1px solid var(--clr-blue);
+}
