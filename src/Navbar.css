@@ -47,13 +47,13 @@
     padding: 0;
     transition: var(--transition);
     background-color: var(--clr-blue);
-    height: 0;
-    overflow: hidden;
+    height: 0;/*&&1 mobile first design, make navbar responsive*/
+    overflow: hidden;/*&&2 */
 }
 .active {
     width: 100%;
     z-index: 1;
-    height: 38vh;
+    height: 38vh;/*&&3 when mobile menu is open*/
 }
 .link {
     list-style: none;
@@ -67,7 +67,7 @@
         display: none;
     }
     .navbar-main {
-        display: flex;/*@@2bigger screen actually display: block*/
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -76,7 +76,9 @@
 
     }
     .navLinks {
-        height: auto !important;
+        height: auto !important;/*&&4 when mobile menu is closed and
+        on a bigger screen, auto will make sure let the height fits the
+        content inside*/
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
