@@ -11,6 +11,7 @@
     --fw-extra-bold: 900;
 
     --clr-light: #fff;
+    --clr-light-background: #ECEEEE;
     --clr-dark: #000;
     --clr-blue: #002366;
     --clr-orange: #ff7f50;
@@ -42,7 +43,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background: var(--clr-light);
+    background: var(--clr-light-background);
     color: var(--clr-dark);
     margin: 0;
     font-family: var(--ff-primary);
