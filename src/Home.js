@@ -1,8 +1,6 @@
 import React from 'react';
 import HeroSection from "./Component/HeroSection/HeroSection";
-import Clients from "./Clients";
-import Footer from "./Footer";
-import AboutMe from "./AboutMe";
+import About from "./Component/About/About";
 import Services from "./Component/Services/Services";
 
 function Home(){
@@ -10,6 +8,7 @@ function Home(){
         <>
             <HeroSection/>
             <Services/>
+            <About/>
 
         </>
     )

@@ -1,7 +1,7 @@
 .services-container {
     width: 100vw;
     height: auto;
-    margin: 2rem auto;
+    margin: 4.5rem auto;
     background-color: var(--clr-light-background);
     display: grid;
     grid-template-columns: 1fr;
@@ -19,7 +19,7 @@
         align-items: center;
     }
 }
-@media (min-width: 1020px) {
+@media (min-width: 1500px) {
     .services-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -34,10 +34,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid var(--clr-blue);
+    border-radius: 0.1%;
     background-color: var(--clr-light);
     padding: 1rem 3rem;
     text-align: center;
+    box-shadow: var(--bs-soft);
 }
 .service-item i {
     font-size: var(--fs-h2);
@@ -46,5 +47,6 @@
 .role {
     font-weight: var(--fw-bold);
     font-size: 1.25rem;
+    color: var(--clr-blue);
 }
 
