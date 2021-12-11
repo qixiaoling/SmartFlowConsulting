@@ -18,7 +18,9 @@ function Clients() {
                             sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </p>
                     </div>
-                    <button type='button' className='clients-btn'>Learn more</button>
+                    <button type='button' className='clients-btn'>
+                        Learn more <i className="fas fa-arrow-right"></i>
+                    </button>
                 </div>
 
                 <div className='clients'>
