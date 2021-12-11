@@ -1,13 +1,13 @@
 .services-container {
     width: 100vw;
     height: auto;
-    margin: 4.5rem auto;
+    margin: 0 auto;
     background-color: var(--clr-light-background);
     display: grid;
     grid-template-columns: 1fr;
     grid-row-gap: 2rem;
     align-items: center;
-    padding: 0 3rem;
+    padding: 5rem 3rem;
 }
 
 @media (min-width: 880px) {
@@ -36,7 +36,7 @@
     align-items: center;
     border-radius: 0.1%;
     background-color: var(--clr-light);
-    padding: 1rem 3rem;
+    padding: 1.5rem 3rem;
     text-align: center;
     box-shadow: var(--bs-soft);
 }
@@ -48,5 +48,8 @@
     font-weight: var(--fw-bold);
     font-size: 1.25rem;
     color: var(--clr-blue);
+}
+.role-desc {
+    margin: 0;
 }
 

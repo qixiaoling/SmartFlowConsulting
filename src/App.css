@@ -19,6 +19,7 @@
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.75rem;
+    --fs-h4: 1.50rem;
     --fs-body: 1rem;
 
     --bs: 8px 8px #fdc500;
@@ -35,6 +36,7 @@
         --fs-h1: 4.5rem;
         --fs-h2: 3.75rem;
         --fs-h3: 2.75rem;
+        --fs-h4: 1.75rem;
         --fs-body: 1.125rem;
     }
 }
@@ -81,5 +83,8 @@ h2 {
 }
 h3 {
     font-size: var(--fs-h3);
+}
+h4 {
+    font-size: var(--fs-h4);
 }
 
