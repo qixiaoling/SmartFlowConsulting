@@ -9,12 +9,12 @@ function Services() {
     return (
         <section className='services-container'>
             {services.map((item) => {
-                const {icon, role, text} = item;
+                const {icon, role, desc} = item;
                 return (
                     <article className="service-item">
                         <i className={icon}></i>
-                        <p>{role}</p>
-                        <p>{text}</p>
+                        <p className='role'>{role}</p>
+                        <p className='role-desc'>{desc}</p>
                     </article>
                 )
             })}
