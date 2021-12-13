@@ -24,6 +24,17 @@
 .footer-form {
     margin: 1rem 0;
 }
+#footer-email {
+    border: 1px solid var(--clr-dark);
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+}
+.footer-submit-btn {
+    padding: 0.5rem;
+    border: none;
+    background-color: var(--clr-blue-btn);
+    color: var(--clr-light);
+}
 .footer-right {
     display: flex;
     flex-direction: column;

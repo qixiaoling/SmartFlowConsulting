@@ -14,8 +14,8 @@ function Footer() {
                         <p className='footer-left-title'>Subscribe</p>
                         <p>Select topics and stay current with our latest insights</p>
                         <form className='footer-form'>
-                            <input type='text' placeholder='Email address'/>
-                            <button>Submit</button>
+                            <input type='text' placeholder='Email address' id='footer-email'/>
+                            <button className='footer-submit-btn'>Submit</button>
                         </form>
                     </div>
                     <div className='footer-right'>
