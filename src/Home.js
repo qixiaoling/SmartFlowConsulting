@@ -4,6 +4,7 @@ import About from "./Component/About/About";
 import Services from "./Component/Services/Services";
 import Clients from "./Component/Clients/Clients";
 import Banner from "./Component/Banner/Banner";
+import Footer from "./Component/Footer/Footer";
 
 
 function Home(){
@@ -14,6 +15,7 @@ function Home(){
             <About/>
             <Clients/>
             <Banner/>
+            <Footer />
 
         </>
     )
