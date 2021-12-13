@@ -3,10 +3,7 @@ import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import './App.css';
 import Navbar from "./Component/Navbar/Navbar";
 import Home from "./Home";
-import AboutMe from "./AboutMe";
-import Project from "./Project";
-import Review from "./Review";
-import Contact from "./Contact";
+import Contact from "./Page/Contact";
 
 function App() {
 
