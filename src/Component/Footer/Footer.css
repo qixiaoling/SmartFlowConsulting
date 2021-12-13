@@ -23,6 +23,10 @@
 }
 .footer-form {
     margin: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 }
 #footer-email {
     border: 1px solid var(--clr-dark);

@@ -12,7 +12,7 @@
     text-align: center;
 }
 .contact-body {
-    margin-top: 2rem;
+    margin: 2rem 0 6rem 0;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -86,10 +86,10 @@ label > textarea  {
         align-items: flex-start;
     }
     .contact-body-left {
-        width: 55%;
+        width: 45%;
     }
     .contact-body-right {
         margin-top: 0;
-        width: 35%;
+        width: 15%;
     }
 }
