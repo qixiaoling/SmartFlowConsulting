@@ -52,7 +52,7 @@
     transition: var(--transition);
     background-color: var(--clr-blue);
     height: 0;/*&&1 mobile first design, make navbar responsive*/
-    overflow: hidden;/*&&2 */
+    overflow: hidden;/*&&2 otherwise you will still see the links!!! struggled with my little pony website */
     z-index: 2;/*@@3 */
 
 
