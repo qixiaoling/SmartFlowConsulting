@@ -11,13 +11,16 @@
     --fw-extra-bold: 900;
 
     --clr-light: #fff;
+    --clr-light-background: #ECEEEE;
     --clr-dark: #000;
     --clr-blue: #002366;
     --clr-orange: #ff7f50;
+    --clr-blue-btn: #045aff;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
-    --fs-h3: 1.25rem;
+    --fs-h3: 1.75rem;
+    --fs-h4: 1.50rem;
     --fs-body: 1rem;
 
     --bs: 8px 8px #fdc500;
@@ -29,11 +32,12 @@
     --transition: all 0.3s linear;
 
 }
-@media (min-width: 800px) {
+@media (min-width: 880px) {
     :root {
         --fs-h1: 4.5rem;
         --fs-h2: 3.75rem;
-        --fs-h3: 1.75rem;
+        --fs-h3: 2.75rem;
+        --fs-h4: 1.75rem;
         --fs-body: 1.125rem;
     }
 }
@@ -42,7 +46,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background: var(--clr-light);
+    background: var(--clr-light-background);
     color: var(--clr-dark);
     margin: 0;
     font-family: var(--ff-primary);
@@ -80,5 +84,8 @@ h2 {
 }
 h3 {
     font-size: var(--fs-h3);
+}
+h4 {
+    font-size: var(--fs-h4);
 }
 

@@ -1,0 +1,116 @@
+.footer-section {
+    width: 100vw;
+    margin: 0 auto;
+    padding: 2.5rem 0;
+}
+.footer-content {
+    width: 90%;
+    margin: 0 auto;
+}
+.footer-text {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer-left, .footer-right {
+    width: 100%;
+}
+.footer-left-title {
+    margin: 0;
+    font-weight: var(--fw-bold);
+}
+.footer-form {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+#footer-email {
+    border: 1px solid var(--clr-dark);
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+}
+.footer-submit-btn {
+    padding: 0.5rem;
+    border: none;
+    background-color: var(--clr-blue-btn);
+    color: var(--clr-light);
+}
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.footer-right-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.footer-right-row-one,
+.footer-right-row-two {
+    width: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.footer-link {
+    text-decoration: none;
+    color:var(--clr-dark);
+    font-size: 0.85rem;
+    font-weight: var(--fw-bold);
+}
+.footer-link:not(:first-child) {
+    margin-left: 1.5rem;
+}
+
+.footer-icon-btn {
+    background-color: rgba(3,0,56,1);
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    color: var(--clr-light);
+    font-size: var(--fs-body);
+    border: none;
+    object-fit: cover;
+}
+.footer-icon-btn:not(:first-child) {
+    margin-left: 1.5rem;
+}
+@media (min-width: 880px) {
+    .footer-left {
+        width: 50%;
+    }
+    .footer-right {
+        width: 50%;
+    }
+    .footer-text {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .footer-right {
+        align-items: flex-end;
+
+    }
+    .footer-right-links {
+        align-items: flex-end;
+    }
+    .footer-right-row-one,
+    .footer-right-row-two {
+        justify-content: flex-end;
+    }
+    .footer-icon {
+        margin-top: 1rem;
+    }
+}
+
