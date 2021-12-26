@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import {Link as LinkR, Link as LinkS} from 'react-router-dom';
+import {Link as LinkS} from 'react-scroll';
+import {Link as LinkR} from 'react-router-dom';
 import './Navbar.css'
 import logo from '../../Assets/logo-lunapic.png'
 
@@ -39,16 +40,16 @@ function Navbar() {
                             <LinkS to='/' onClick={closeMobileMenu} className='router-menu' >Home</LinkS>
                         </li>
                         <li className='link'>
-                            <LinkS to='expertise' onClick={closeMobileMenu} className='router-menu'>Expertise</LinkS>
+                            <LinkS to='expertise' smooth={true} duration={500}
+                                   onClick={closeMobileMenu} className='router-menu'>Expertise</LinkS>
                         </li>
                         <li className='link'>
-                            <LinkS to='about-me' onClick={closeMobileMenu} className='router-menu'>About</LinkS>
+                            <LinkS to='about' smooth={true} duration={500}
+                                   onClick={closeMobileMenu} className='router-menu'>About</LinkS>
                         </li>
                         <li className='link'>
-                            <LinkS to='review' onClick={closeMobileMenu} className='router-menu'>Review</LinkS>
-                        </li>
-                        <li className='link'>
-                            <LinkS to='clients' onClick={closeMobileMenu} className='router-menu'>Clients</LinkS>
+                            <LinkS to='clients' smooth={true} duration={500}
+                                   onClick={closeMobileMenu} className='router-menu'>Clients</LinkS>
                         </li>
                         <li className='link'>
                             <LinkR to='/contact' onClick={closeMobileMenu} className='router-menu'>Contact</LinkR>

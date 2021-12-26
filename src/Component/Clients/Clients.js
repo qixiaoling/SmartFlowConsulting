@@ -8,7 +8,7 @@ import pggm from '../../Assets/Logos/PGGM.png'
 import './Clients.css';
 function Clients() {
     return(
-        <section className='clients-container'>
+        <section className='clients-container' id='clients'>
             <div className='clients-content'>
                 <div className='clients-title'>
                     <div className='clients-text'>

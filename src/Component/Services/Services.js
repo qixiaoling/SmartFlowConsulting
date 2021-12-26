@@ -7,7 +7,7 @@ function Services() {
 
 
     return (
-        <section className='services-container'>
+        <section className='services-container' id='expertise'>
             {services.map((item) => {
                 const {icon, role, desc} = item;
                 return (

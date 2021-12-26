@@ -8,12 +8,15 @@
 .navbar-narrow {
     height: 3vh;
     width: 100%;
-    text-align: end;
+    /*text-align: end;*/
     font-size: 0.75rem;
     line-height: 0;
     background-color: var(--clr-blue);
     color: var(--clr-light);
-    padding: 0.2rem 3rem;
+    padding: 0.2rem 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+
 }
 .navbar-main {
     width: 95%;
@@ -41,7 +44,8 @@
 .navLinks {
     position: absolute;/*@@1 To prevent when mobile menu open, it pushes
     the Herosection down*/
-    top: 11.5vh;/*@@2 position*/
+    /*top: 11.5vh;!*@@2 position*!*/
+    top: calc(3vh + 98px);
     left: 0;
     width: 100%;
     display: flex;
@@ -54,6 +58,7 @@
     height: 0;/*&&1 mobile first design, make navbar responsive*/
     overflow: hidden;/*&&2 otherwise you will still see the links!!! struggled with my little pony website */
     z-index: 2;/*@@3 */
+    margin: 0;
 
 
 }
@@ -71,6 +76,12 @@
     text-decoration: none;
     color: var(--clr-light);
 }
+@media (min-width: 880px) {
+    .navLinks {
+        top: calc(3vh + 99px)
+    }
+
+}
 @media (min-width: 1020px) {
     .hamburger-menu {
         display: none;
@@ -84,6 +95,7 @@
         margin: 0 auto;
 
     }
+
     .navLinks {
         position: static;/*@@5 let it be back to normal so that it can
          be position: flex*/
