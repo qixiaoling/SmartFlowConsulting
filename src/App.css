@@ -30,6 +30,7 @@
     --radius-larger: 0.5em;
 
     --transition: all 0.3s linear;
+    --transition-faster: all 0.1s linear;
 
 }
 @media (min-width: 880px) {
