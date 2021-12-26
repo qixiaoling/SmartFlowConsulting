@@ -71,6 +71,12 @@
 }
 .link {
     list-style: none;
+    border-bottom: 2px solid var(--clr-blue);
+    transition: var(--transition-faster);
+}
+.link:hover {
+    cursor: pointer;
+    border-bottom: 3px solid var(--clr-orange);
 }
 .router-menu {
     text-decoration: none;
@@ -111,9 +117,15 @@
     }
     .link {
         display: inline-block;
+        border-bottom: 2px solid var(--clr-light-background);
+        transition: var(--transition-faster);
     }
     .router-menu {
         color: var(--clr-dark);
+    }
+    .link:hover {
+        cursor: pointer;
+        border-bottom: 3px solid var(--clr-orange);
     }
 
 
