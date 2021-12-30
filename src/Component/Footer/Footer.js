@@ -2,12 +2,13 @@ import React from 'react';
 import './Footer.css';
 import logo from "../../Assets/logo-lunapic.png";
 import {Link as LinkR} from "react-router-dom";
+import eric_logo from "../../Assets/eric_logo.png";
 function Footer() {
     return(
         <section className='footer-section'>
             <div className='footer-content'>
                 <LinkR to='/' className='company-logo'>
-                    <img src={logo} alt=""/>
+                    <img src={eric_logo} alt=""/>
                 </LinkR>
                 <div className='footer-text'>
                     <div className='footer-left'>

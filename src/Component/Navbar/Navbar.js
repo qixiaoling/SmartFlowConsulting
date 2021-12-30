@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {Link as LinkS} from 'react-scroll';
 import {Link as LinkR, useHistory} from 'react-router-dom';
 import './Navbar.css'
-import logo from '../../Assets/logo-lunapic.png'
+import eric_logo from '../../Assets/eric_logo.png'
 
 function Navbar() {
 
@@ -31,7 +31,7 @@ function Navbar() {
             <div className='navbar-main'>
                 <div className='navbar-header'>
                     <LinkR to='/' className='company-logo'>
-                        <img src={logo} alt=""/>
+                        <img src={eric_logo} alt=""/>
                     </LinkR>
                     <div className='hamburger-menu' onClick={() =>
                         toggleLinks(!links)}>
