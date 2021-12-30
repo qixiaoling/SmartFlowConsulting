@@ -1,12 +1,13 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {Link as LinkS} from 'react-scroll';
-import {Link as LinkR} from 'react-router-dom';
+import {Link as LinkR, useHistory} from 'react-router-dom';
 import './Navbar.css'
 import logo from '../../Assets/logo-lunapic.png'
 
 function Navbar() {
 
     const [links, toggleLinks] = useState(false);
+    const history = useHistory();
 
     function changeClasses() {
         let classes = "navLinks";
@@ -18,6 +19,9 @@ function Navbar() {
     function closeMobileMenu(){
         toggleLinks(false);
     }
+    useEffect(()=>{
+        console.log(history.location.pathname)
+    },[])
 
     return (
         <nav className='navbar-container'>
@@ -37,19 +41,36 @@ function Navbar() {
 
                 <ul className={changeClasses()}>
                         <li className='link'>
-                            <LinkS to='/' onClick={closeMobileMenu} className='router-menu' >Home</LinkS>
+                            <LinkR to='/' onClick={closeMobileMenu} className='router-menu'>Home</LinkR>
                         </li>
                         <li className='link'>
-                            <LinkS to='expertise' smooth={true} duration={500}
-                                   onClick={closeMobileMenu} className='router-menu'>Expertise</LinkS>
+                            {
+                                history.location.pathname === '/' ?
+                                    (<LinkS to='expertise' smooth={true} duration={500}
+                                            onClick={closeMobileMenu} className='router-menu'>Expertise</LinkS>)
+                                    :
+                                    (<LinkR  to='/' onClick={closeMobileMenu} className='router-menu'>Expertise</LinkR>)
+                            }
+
                         </li>
                         <li className='link'>
-                            <LinkS to='about' smooth={true} duration={500}
-                                   onClick={closeMobileMenu} className='router-menu'>About</LinkS>
+                            {
+                                history.location.pathname === '/' ?
+                                    (<LinkS to='about' smooth={true} duration={500}
+                                            onClick={closeMobileMenu} className='router-menu'>About</LinkS>)
+                                    :
+                                    (<LinkR  to='/' onClick={closeMobileMenu} className='router-menu'>About</LinkR>)
+                            }
+
                         </li>
                         <li className='link'>
-                            <LinkS to='clients' smooth={true} duration={500}
-                                   onClick={closeMobileMenu} className='router-menu'>Clients</LinkS>
+                            {
+                                history.location.pathname === '/' ?
+                                    (<LinkS to='clients' smooth={true} duration={500}
+                                            onClick={closeMobileMenu} className='router-menu'>Clients</LinkS>)
+                                    :
+                                    (<LinkR  to='/' onClick={closeMobileMenu} className='router-menu'>Clients</LinkR>)
+                            }
                         </li>
                         <li className='link'>
                             <LinkR to='/contact' onClick={closeMobileMenu} className='router-menu'>Contact</LinkR>

@@ -146,7 +146,7 @@ function Contact() {
                                 <p className='text-bold'>REPRINTS</p>
                                 <p className='text-small'>To request permission to republish an article, or if you have any
                                     questions about the usage of content
-                                    published by McKinsey & Company visit our <LinkR>FAQ</LinkR> page.</p>
+                                    published by Smart Flow Consulting visit our <LinkR to="/">FAQ</LinkR> page.</p>
                             </div>
                         </div>
 

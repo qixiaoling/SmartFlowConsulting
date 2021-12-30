@@ -1,5 +1,5 @@
 import React from 'react';
-import sns from '../../Assets/Logos/SNS.png'
+import rabo from '../../Assets/Logos/rabobank-logo.png'
 import ing from '../../Assets/Logos/ING_BANK.png'
 import abn from '../../Assets/Logos/ABN_AMRO.png'
 import volks from '../../Assets/Logos/De_Volksbank_logo.png'
@@ -24,7 +24,7 @@ function Clients() {
                 </div>
 
                 <div className='clients'>
-                    <img  className='logo-img' src={sns} alt=''/>
+                    <img  className='logo-img' src={rabo} alt=''/>
                     <img  className='logo-img' src={ing} alt=''/>
                     <img  className='logo-img' src={abn} alt=''/>
                     <img  className='logo-img' src={volks} alt=''/>
