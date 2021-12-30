@@ -38,6 +38,7 @@
     height: 100%;
     object-fit: cover;
 }
+
 .hamburger-menu {
     font-size: var(--fs-h3);
 }
