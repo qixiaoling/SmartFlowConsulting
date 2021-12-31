@@ -3,6 +3,7 @@ import {Link as LinkR} from 'react-router-dom';
 import emailjs from 'emailjs-com';
 import './Contact.css'
 import Footer from "../Component/Footer/Footer";
+import Navbar from "../Component/Navbar/Navbar";
 
 function Contact() {
     const [state, setState] = useState({
@@ -33,6 +34,13 @@ function Contact() {
 
     return (
         <>
+            <Navbar/>
+            {/* $$4 we put the NavBar component inside the Contact Component.
+            so that NavBar's history.location.pathname = "/contact" when the page
+            loads, otherwise, it remains "/" and the LinkR will not work =>
+            therefore when at the Contact page, clicking Expertise will not go
+            back to the home page and we get "cannot find
+            "scroller.js:57 target Element not found" error */}
             <section className='contact-section'>
                 <div className='contact-content'>
                     <div className='contact-title-container'>

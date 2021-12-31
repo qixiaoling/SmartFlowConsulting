@@ -9,10 +9,17 @@ function App() {
 
     return (
         <Router>
-            <Navbar/>
+            {/*<Navbar/>*/} {/* $$1 The downside is NavBar would not be rendered
+            everytime the contact page loads. so that it will remain history.
+            location/pathname remains "/" even when the pathname should be
+            "/contact" */}
             <Switch>
                 <Route path='/' exact component={Home}/>
+                {/* $$2 Therefore*/}
+                {/*we put the NavBar component inside the Home Component.*/}
                 <Route path='/contact' exact component={Contact}/>
+                {/* $$3 Therefore*/}
+                {/*we put the NavBar component inside the Contact Component.*/}
             </Switch>
         </Router>
 
