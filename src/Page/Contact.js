@@ -3,6 +3,7 @@ import {Link as LinkR} from 'react-router-dom';
 import emailjs from 'emailjs-com';
 import './Contact.css'
 import Footer from "../Component/Footer/Footer";
+import Navbar from "../Component/Navbar/Navbar";
 
 function Contact() {
     const [state, setState] = useState({
@@ -33,6 +34,7 @@ function Contact() {
 
     return (
         <>
+            <Navbar/>
             <section className='contact-section'>
                 <div className='contact-content'>
                     <div className='contact-title-container'>
