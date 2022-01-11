@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {Link as LinkS} from 'react-scroll';
 import {Link as LinkR, useHistory} from 'react-router-dom';
 import './Navbar.css'
-import eric_logo from '../../Assets/eric_logo.png'
+import eric_logo from '../../Assets/sfc_logo_website_20211230 (044).png'
 
 function Navbar() {
 

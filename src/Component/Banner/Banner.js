@@ -7,7 +7,7 @@ function Banner() {
         <section className='banner-section'>
             <div className='banner-title'>
                 <h3>How can we help you?</h3>
-                <p><LinkR>Get in touch</LinkR> with us</p>
+                <p><LinkR to='/contact'>Get in touch</LinkR> with us</p>
             </div>
         </section>
     )
